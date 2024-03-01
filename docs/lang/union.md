@@ -15,6 +15,17 @@ union MyUnion {
 
 联合体的定义与结构体类似。按照上述定义，`MyUnion` 同样可以当作一种自定义类型使用。名称 `MyUnion` 可以省略。
 
+## 联合体的初始化
+
+实例:
+```cpp
+union MyUnion {
+  int x;
+  long long y;
+};
+MyUnion u={.y=17};
+```
+
 ## 访问/修改成员元素
 
 与结构体类似，同样可以使用 `变量名.成员名` 进行访问。
